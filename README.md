@@ -8,11 +8,32 @@
 ## Finish your Nx platform setup
 
 🚀 [Finish setting up your workspace](https://cloud.nx.app/connect/HpqeAx4qZr) to get faster builds with remote caching, distributed task execution, and self-healing CI. [Learn more about Nx Cloud](https://nx.dev/ci/intro/why-nx-cloud).
-## Generate a library
+## Generate code
 
 ```sh
-npx nx g @nx/js:lib packages/pkg1 --publishable --importPath=@my-org/pkg1
+pnpm gen package packages/pkg1
 ```
+
+The local wrapper automatically applies the workspace naming convention:
+
+```txt
+@tazitinov/personal-portal-<name>
+```
+
+Examples:
+
+```sh
+pnpm gen next-app apps/web
+pnpm gen next-lib packages/ui --publishable
+pnpm gen angular-app apps/dashboard
+pnpm gen angular-lib packages/design-system --publishable
+pnpm gen nest-app apps/api
+pnpm gen node-app apps/worker
+pnpm gen js-lib packages/utils
+pnpm gen node-lib packages/data --publishable
+pnpm gen nest-lib packages/auth --publishable
+```
+
 
 ## Run tasks
 
