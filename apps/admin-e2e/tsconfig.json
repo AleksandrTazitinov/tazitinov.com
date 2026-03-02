@@ -3,8 +3,10 @@
   "compilerOptions": {
     "allowJs": true,
     "outDir": "../../dist/out-tsc",
+    "composite": true,
     "sourceMap": false,
-    "module": "commonjs",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,

@@ -2,6 +2,7 @@
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "outDir": "out-tsc/@tazitinov/personal-portal-api-e2e",
+    "composite": true,
     "esModuleInterop": true,
     "noUnusedLocals": false,
     "noImplicitAny": false
